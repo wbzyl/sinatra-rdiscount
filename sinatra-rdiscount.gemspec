@@ -17,7 +17,8 @@ Gem::Specification.new do |s|
   s.authors = ["Włodek Bzyl"]
   s.files = FileList["[A-Z]*", "{lib,test,example}/**/*", ".gitignore"]
   s.add_dependency 'sinatra', '>=0.9.1'
-  s.add_dependency 'rdiscount', '>= 1.3.4'
+  s.add_dependency 'rdiscount', '>=1.3.4'
+  s.add_dependency 'erubis', '>=2.6.4'  
   
   s.rubygems_version = '1.3.1'
 end
