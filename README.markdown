@@ -1,13 +1,17 @@
-## Sinatra Extensions
+# RDiscount templates for Sinatra
 
-[Typo](http://www.sinatrarb.com/extensions.html):
+**NOT ready** yet.
+
+
+## Sinatra Extensions Doc
+
+[Typo in doc](http://www.sinatrarb.com/extensions.html):
 
     require 'sinatra/base'
-    require 'rack/utils'    # added 
+    require 'rack/utils'                # missed
       
     module Sinatra
       module HTMLEscapeHelper
         def h(text)
-          Rake::Utils.escape_html(text) #<-- Rack::Utils.escape_html(text)
+          Rake::Utils.escape_html(text) # should be Rack::Utils.escape_html(text)
         end
-
