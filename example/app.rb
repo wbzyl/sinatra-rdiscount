@@ -1,7 +1,15 @@
+# -*- coding: utf-8 -*-
+
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/rdiscount'
 
 get "/hello" do
-  h "1 < 2"     # => "1 &lt; 2"
+  @name = "RDiscount"
+  rdiscount :hello, :layout => false
+end
+
+get "/" do
+  @name = "RDiscount"
+  rdiscount :hello2
 end

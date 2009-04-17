@@ -1,0 +1,6 @@
+# Hello {%= @name %}
+
+Simple list:
+
+1. A
+1. B
