@@ -9,7 +9,7 @@ get "/hello" do
   rdiscount :hello, :layout => false
 end
 
-get "/" do
+get "/hello2" do
   @name = "RDiscount"
-  rdiscount :hello2
+  rdiscount :hello2, :layout => :layout2
 end
