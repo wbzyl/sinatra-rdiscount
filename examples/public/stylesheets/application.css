@@ -2,6 +2,7 @@ html {
   margin: 0;
   padding: 0;
   background-color: #0C7D85;
+  line-height: 1.6;
 }
 
 body {
@@ -13,7 +14,12 @@ body {
 }
 
 pre {
-  padding-left: 2em;
+  padding: 0.5em 0 0.5em 2em;
+  background-color: #D7D3C1;
+}
+
+h1, h2, h3 {
+  color: #0C7D85;
 }
 
 /* rdiscount comments */
