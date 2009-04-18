@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-require 'rake'
-
 Gem::Specification.new do |s|
   s.name = "sinatra-rdiscount"
   s.version = '0.0.4'
@@ -12,7 +10,9 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/wbzyl/sinatra-rdiscount"
   s.description = "RDiscount templates for Sinatra applications"
   s.authors = ["Włodek Bzyl"]
-  s.files = FileList["[A-Z]*", "{lib,test,example}/**/*", ".gitignore"]
+  s.files = Dir['lib/**/*.rb'] + Dir['test/**/*.rb'] + Dir['examples/**/*.{rb,ru,css,rdiscount}'] +
+    %w{.gitignore sinatra-rdiscount.gemspec Rakefile README.markdown LICENSE} 
+
   s.add_dependency 'sinatra', '>=0.9.1'
   s.add_dependency 'rdiscount', '>=1.3.4'
   s.add_dependency 'erubis', '>=2.6.4'  
