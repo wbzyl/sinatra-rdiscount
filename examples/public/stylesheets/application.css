@@ -12,6 +12,10 @@ body {
   background-color: #E8DDCB;
 }
 
+pre {
+  padding-left: 2em;
+}
+
 /* rdiscount comments */
 
 h6 {
