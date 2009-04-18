@@ -13,9 +13,7 @@ Rendering methods will render any strings passed to them directly.
 ### RDiscount Templates
 
 The following gems are required to render RDiscount templates: 
-
-1. rdiscount
-2. erubis
+*rdiscount*, *erubis*.
 
 This helper method:
 
@@ -25,8 +23,8 @@ This helper method:
 
 renders *./views/index.rdiscount*.
 
-If a layout named “layout” exists, it will be used each time a
-template is rendered. 
+If a layout named *layout.rdiscount* exists, it will be used each time
+a template is rendered.
 
 You can disable layouts by passing:
 
@@ -38,7 +36,7 @@ For example
       rdiscount :index, :layout => false
     end
 
-You can set a layout different from the default with:
+You can set a different layout from the default with:
 
     get '/' do
       rdiscount :index, :layout => :application
@@ -47,7 +45,8 @@ You can set a layout different from the default with:
 This renders *./views/index.rdiscount* template
 within *./views/application.rdiscount* layout.
 
-**Important Info** 
+
+## Important Info
 
 Layouts are **HTML**, not RDiscount, files with ERB 
 insertions. Example:
