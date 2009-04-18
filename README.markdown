@@ -1,5 +1,30 @@
 # RDiscount Templates for Sinatra
 
+The *siantra-rdiscount* gem is an extension for Sinatra.
+It provides a request-level helper method named *rdiscount*.
+
+To use this extension install this gem on your system:
+
+    sudo gem install sinatra-rdiscount
+
+Then create simple Sinatra application *app.rb*:
+
+    require 'rubygems'
+    require 'sinatra'
+    require 'sinatra/rdiscount'
+    
+    get "/" do
+      rdiscount "# Hello Rdiscount"
+    end
+
+and run the above code:
+
+    ruby app.rb
+
+The result could be seen here: *http://localhost:4567*.
+
+Another example could be find in the *examples* directory.   
+
 
 ## Views / Templates
 
@@ -21,7 +46,7 @@ This helper method:
       rdiscount :index
     end
 
-renders *./views/index.rdiscount*.
+renders template *./views/index.rdiscount*.
 
 If a layout named *layout.rdiscount* exists, it will be used each time
 a template is rendered.
