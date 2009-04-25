@@ -1,11 +1,12 @@
+require 'erubis'
+require 'rdiscount'
+
 require 'sinatra/base'
 
 module Sinatra
   module RDiscountTemplate
 
     def rdiscount(template, options={}, locals={})
-      require 'erubis' unless defined? ::Erubis::Eruby      
-      require 'rdiscount' unless defined? ::RDiscount
       render :rdiscount, template, options, locals
     end
     
