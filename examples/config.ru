@@ -2,8 +2,6 @@
 
 require 'app'
 
-use Rack::Static,
-    :urls => ["/stylesheets"],
-    :root => "public"
+use Rack::Static, :urls => ["/stylesheets"], :root => "public"
 
 run Sinatra::Application

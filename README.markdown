@@ -30,12 +30,11 @@ The result could be seen here: *http://localhost:4567*.
 Another example could be find in the *examples* directory.   
 
 
-## Views / Templates
+## Template Languages (*update to The Sinatra Book*) 
 
 One important thing to remember is that you always have to reference
 templates and layouts with **symbols**, even if they’re in a subdirectory,
 for example `:'subdir/template'`.
-
 Rendering methods will render any strings passed to them directly.
 
 
