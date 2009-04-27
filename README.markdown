@@ -33,10 +33,7 @@ Run it with:
 
     rackup -p 4567 config.ru
 
-Now, visit the following url:
-
-    http://localhost:4567/hello2
-
+Now, visit the following url *http://localhost:4567/hello2*
 and contemplate the sheer beauty of the rendered code.
 
 
