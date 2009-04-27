@@ -74,8 +74,8 @@ within *./views/application.rdiscount* layout.
 
 ## Important Info
 
-Layouts are **HTML**, not RDiscount, files with ERB 
-insertions. Example:
+Layouts are **RHTML** — not RDiscount — files. 
+Layout example:
 
     <!DOCTYPE html>
     <html>
@@ -87,16 +87,15 @@ insertions. Example:
       </body>
     </html>
 
-Templates are RDiscount files with changed embedded pattern.
-The default pattern `'<% %>'` is replaced by `'{% %}'`.
-Example:
+Templates are **Markdown** files with ERB insertions delimited
+by `'{% %}'`. Template example:
 
     # Hello {%= @name %}
 
-Such changes were necessary to avoid messing with
-RDiscount engine which converts bare `&lt;` to `&amp;lt;`.
-
-Also I think that there is no way with RDiscount to render
-that line:
+Such a change in embedded code pattern was necessary,
+to avoid messing with RDiscount engine, 
+which converts bare `&lt;` to `&amp;lt;`.
+Also I think that there is no way for RDiscount renderer
+to generate that line:
 
     <!DOCTYPE html>
