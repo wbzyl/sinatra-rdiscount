@@ -29,6 +29,16 @@ and run the above code:
 The result could be seen here: *http://localhost:4567*.
 
 Another example could be find in the *examples* directory.   
+Run it with:
+
+    rackup -p 4567 config.ru
+
+Now, visit the following url:
+
+    http://localhost:4567/hello2
+
+and contemplate the sheer beauty of the rendered code.
+
 
 
 ## Template Languages (*update to The Sinatra Book*) 
