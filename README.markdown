@@ -1,4 +1,4 @@
-# Extension providing RDiscount templates for Sinatra
+# Extension providing RDiscount templates for Sinatra apps
 
 The *sinatra-rdiscount* gem is an extension for Sinatra
 implemented as a gem.
@@ -35,7 +35,6 @@ Run it with:
 
 Now, visit the following url *http://localhost:4567/hello2*
 and contemplate the sheer beauty of the rendered code.
-
 
 
 ## Template Languages (*update to The Sinatra Book*) 
