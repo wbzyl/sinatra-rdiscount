@@ -2,13 +2,13 @@
 
 Gem::Specification.new do |s|
   s.name = "sinatra-rdiscount"
-  s.version = '0.0.6'
+  s.version = '0.0.8'
   s.date = '2009-03-31'
   
   s.summary = "RDiscount templates for Sinatra applications"
   s.email = "matwb@univ.gda.pl"
   s.homepage = "http://github.com/wbzyl/sinatra-rdiscount"
-  s.description = "RDiscount templates for Sinatra applications"
+  s.description = ""
   s.authors = ["Włodek Bzyl"]
   s.files = %w{.gitignore
                sinatra-rdiscount.gemspec
@@ -16,7 +16,10 @@ Gem::Specification.new do |s|
                README.markdown
                LICENSE
                lib/sinatra/rdiscount.rb
-               test/spec_sinatra_rdiscount.rb
+               test/test_helper.rb
+               test/sinatra_rdiscount_test.rb
+               test/views/hello.rdiscount
+               test/views/layout2.rdiscount
                examples/app.rb
                examples/config.ru
                examples/views/layout2.rdiscount
