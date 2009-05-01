@@ -27,8 +27,8 @@ Gem::Specification.new do |s|
                examples/views/hello.rdiscount
                examples/public/stylesheets/application.css}
 
-  s.add_dependency 'sinatra', '>=0.9.1'
-  s.add_dependency 'rdiscount', '>=1.3.4'
+  #s.add_dependency 'sinatra', '>=0.9.1'
+  #s.add_dependency 'rdiscount', '>=1.3.4'
   s.add_dependency 'erubis', '>=2.6.4'  
   
   s.rubygems_version = '1.3.1'

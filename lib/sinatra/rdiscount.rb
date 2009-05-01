@@ -4,7 +4,7 @@ require 'rdiscount'
 require 'sinatra/base'
 
 module Sinatra
-  module RDiscountTemplate
+  module RDiscount
 
     def rdiscount(template, options={}, locals={})
       render :rdiscount, template, options, locals
@@ -29,5 +29,5 @@ module Sinatra
 
   end
 
-  helpers RDiscountTemplate
+  helpers RDiscount
 end
