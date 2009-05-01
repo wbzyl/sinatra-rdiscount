@@ -14,7 +14,6 @@ begin
     s.description = "An extension providing RDiscount templates for Sinatra applications."
     s.authors = ["Włodek Bzyl"]
 
-    s.add_dependency 'rdiscount', '>=1.3.4'
     s.add_dependency 'erubis', '>=2.6.4'  
   end
 rescue LoadError

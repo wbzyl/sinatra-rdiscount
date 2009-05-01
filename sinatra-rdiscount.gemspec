@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name = "sinatra-rdiscount"
-  s.version = '0.0.8'
-  s.date = '2009-03-31'
+  s.version = '0.1.0'
+  s.date = '2009-05-01'
   
   s.summary = "RDiscount templates for Sinatra applications"
   s.email = "matwb@univ.gda.pl"
@@ -27,8 +27,6 @@ Gem::Specification.new do |s|
                examples/views/hello.rdiscount
                examples/public/stylesheets/application.css}
 
-  #s.add_dependency 'sinatra', '>=0.9.1'
-  #s.add_dependency 'rdiscount', '>=1.3.4'
   s.add_dependency 'erubis', '>=2.6.4'  
   
   s.rubygems_version = '1.3.1'
