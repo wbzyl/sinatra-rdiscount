@@ -14,7 +14,8 @@ begin
     s.description = "An extension providing RDiscount templates for Sinatra applications."
     s.authors = ["Włodek Bzyl"]
 
-    s.add_dependency 'erubis', '>=2.6.4'  
+    s.add_dependency 'erubis', '>=2.6.4'
+    s.add_dependency 'rdiscount', '>=1.3.4'      
   end
 rescue LoadError
   puts "Jeweler not available."
@@ -30,7 +31,7 @@ end
 
 desc 'Install the package as a gem.'
 task :install => [:clean, :build] do
-  gem = Dir['pkg/*.gem'].first
+  gem = Dir['pkg/*.gem'].last
   sh "sudo gem install --no-rdoc --no-ri --local #{gem}"
 end
 
