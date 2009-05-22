@@ -1,4 +1,4 @@
 # Hello {%= @name %}
 
-Try `localhost:4567/hello2` to get styled page
-with intro to *Markdown*.
+Try [http://localhost:4567/2](http://localhost:4567/2) 
+to get styled page with intro to *Markdown*.

@@ -1,7 +1,4 @@
-# run with:  thin --rackup config.ru -p 4567 start
+# run i:  rackup config.ru -p 4567
 
 require 'app'
-
-use Rack::Static, :urls => ["/stylesheets"], :root => "public"
-
 run Sinatra::Application

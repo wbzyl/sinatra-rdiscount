@@ -9,7 +9,7 @@ require 'sinatra/rdiscount'
 class MApp < Sinatra::Base
   helpers Sinatra::RDiscount
 
-  get '/' do
+  get '/?' do
     rdiscount "## hello form modular app"
   end
 end
