@@ -6,16 +6,20 @@ require "rake/clean"
 
 begin
   require 'jeweler'
-  Jeweler::Tasks.new do |s|
-    s.name = "sinatra-rdiscount"
-    s.summary = "An extension providing RDiscount templates for Sinatra applications."
-    s.email = "matwb@univ.gda.pl"
-    s.homepage = "http://github.com/wbzyl/sinatra-rdiscount"
-    s.description = "An extension providing RDiscount templates for Sinatra applications."
-    s.authors = ["Włodek Bzyl"]
-
-    s.add_dependency 'erubis', '>=2.6.4'
-    s.add_dependency 'rdiscount', '>=1.3.4'      
+  Jeweler::Tasks.new do |gem|
+    gem.name = "sinatra-rdiscount"
+    gem.summary = "An extension providing RDiscount templates for Sinatra applicationgem."
+    gem.email = "matwb@univ.gda.pl"
+    gem.homepage = "http://github.com/wbzyl/sinatra-rdiscount"
+    gem.description = "An extension providing RDiscount templates for Sinatra applicationgem."
+    gem.authors = ["Włodek Bzyl"]
+    
+    gem.add_runtime_dependency 'sinatra', '>= 0.9.2'
+    gem.add_runtime_dependency 'erubis', '>=2.6.4'
+    gem.add_runtime_dependency 'rdiscount', '>=1.3.4'      
+    
+    gem.add_development_dependency 'rack', '>=1.0.0'
+    gem.add_development_dependency 'rack-test', '>=0.3.0'
   end
 rescue LoadError
   puts "Jeweler not available."
@@ -34,5 +38,3 @@ task :install => [:clean, :build] do
   gem = Dir['pkg/*.gem'].last
   sh "sudo gem install --no-rdoc --no-ri --local #{gem}"
 end
-
-task :default => :test

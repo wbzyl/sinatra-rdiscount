@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
-
 require 'rubygems'
 require 'sinatra'
+
+gem 'wbzyl-sinatra-rdiscount', '>=0.1.2'
 require 'sinatra/rdiscount'
 
 get "/hello" do

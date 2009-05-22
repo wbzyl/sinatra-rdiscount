@@ -7,15 +7,14 @@ for rendering RDiscount templates.
 
 To use this extension, first install *sinatra-rdiscount* gem:
 
-    git clone git://github.com/wbzyl/sinatra-rdiscount.git
-    cd sinatra-rdiscount
-    gem build sinatra-rdiscount
-    sudo gem install sinatra-rdiscount
+    sudo gem install wbzyl-sinatra-rdiscount -s http://gems.github.com
 
 Then create a simple Sinatra application *app.rb*:
 
     require 'rubygems'
     require 'sinatra'
+      
+    gem 'wbzyl-sinatra-rdiscount', '>=0.1.2'
     require 'sinatra/rdiscount'
     
     get "/" do
