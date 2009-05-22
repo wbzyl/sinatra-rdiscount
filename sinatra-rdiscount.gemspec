@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sinatra-rdiscount}
-  s.version = "0.1.2"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["W\305\202odek Bzyl"]
+  s.authors = ["Wlodek Bzyl"]
   s.date = %q{2009-05-22}
-  s.description = %q{An extension providing RDiscount templates for Sinatra applicationgem.}
+  s.description = %q{Sinatra extension providing RDiscount templates for Sinatra application.}
   s.email = %q{matwb@univ.gda.pl}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.3}
-  s.summary = %q{An extension providing RDiscount templates for Sinatra applicationgem.}
+  s.summary = %q{Sinatra extension providing RDiscount templates for Sinatra application.}
   s.test_files = [
     "test/test_helper.rb",
      "test/sinatra_rdiscount_test.rb",

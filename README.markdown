@@ -1,39 +1,37 @@
-# Extension providing RDiscount templates for Sinatra apps
+# Sinatra RDiscount Extension
 
-The *sinatra-rdiscount* gem is an extension for Sinatra
-implemented as a gem.
-It provides a request-helper method named `rdiscount`
+The *sinatra-rdiscount* extension provides `rdiscount` helper method
 for rendering RDiscount templates.
 
-To use this extension, first install *sinatra-rdiscount* gem:
+To install it, run: 
 
     sudo gem install wbzyl-sinatra-rdiscount -s http://gems.github.com
 
-Then create a simple Sinatra application *app.rb*:
+To test it, create a simple Sinatra application:
 
+    # app.rb
     require 'rubygems'
     require 'sinatra'
       
-    gem 'wbzyl-sinatra-rdiscount', '>=0.1.2'
+    gem 'wbzyl-sinatra-rdiscount', '>=0.1.4'
     require 'sinatra/rdiscount'
     
     get "/" do
-      rdiscount "# Hello Rdiscount"
+      rdiscount "# Hello RDiscount"
     end
 
-and run the above code:
+and run it with:
 
     ruby app.rb
 
-The result could be seen here: *http://localhost:4567*.
+The result could be seen at *http://localhost:4567*.
 
-Another example could be find in the *examples* directory.   
-Run it with:
+Another example could be find in the *examples* directory. Run it with:
 
     rackup -p 4567 config.ru
 
-Now, visit the following url *http://localhost:4567/hello2*
-and contemplate the sheer beauty of the rendered code.
+and visit *http://localhost:4567/hello2* to contemplate the sheer 
+beauty of the rendered "Hello RDiscount".
 
 
 ## Template Languages (*update to The Sinatra Book*) 
