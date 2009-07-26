@@ -2,9 +2,10 @@ require 'rubygems'
 require 'test/unit'
 require 'rack/test'
 
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'sinatra/rdiscount'
+path = File.expand_path("../lib" + File.dirname(__FILE__))
+$:.unshift(path) unless $:.include?(path)
 
+require 'sinatra/rdiscount'
 require 'rdiscount'
 
 class Test::Unit::TestCase
