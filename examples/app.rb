@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 
-gem 'wbzyl-sinatra-rdiscount', '>=0.1.2'
 require 'sinatra/rdiscount'
 
 get "/?" do

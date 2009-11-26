@@ -22,10 +22,11 @@ begin
     # gem is a Gem::Specification
     # refer to http://www.rubygems.org/read/chapter/20 for additional settings  
   end
+  Jeweler::GemcutterTasks.new  
 rescue LoadError
   puts "Jeweler not available."
   puts "Install it with:"
-  puts "  sudo gem install technicalpickles-jeweler -s http://gems.github.com"
+  puts "  sudo gem install jeweler -s http://gemcutter.com"
 end
 
 Rake::TestTask.new(:test) do |t|

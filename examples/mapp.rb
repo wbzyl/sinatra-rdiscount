@@ -3,7 +3,6 @@ require 'rubygems'
 require 'rack'
 require 'sinatra/base'
 
-gem 'wbzyl-sinatra-rdiscount', '>=0.1.2'
 require 'sinatra/rdiscount'
 
 class MApp < Sinatra::Base

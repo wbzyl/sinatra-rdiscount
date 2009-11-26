@@ -5,7 +5,7 @@ for rendering RDiscount templates.
 
 To install it, run: 
 
-    sudo gem install wbzyl-sinatra-rdiscount -s http://gems.github.com
+    sudo gem install sinatra-rdiscount -s http://gemcutter.com
 
 To test it, create a simple Sinatra application:
 
@@ -13,7 +13,6 @@ To test it, create a simple Sinatra application:
     require 'rubygems'
     require 'sinatra'
       
-    gem 'wbzyl-sinatra-rdiscount', '>=0.1.4'
     require 'sinatra/rdiscount'
     
     get "/" do
