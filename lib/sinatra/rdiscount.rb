@@ -5,14 +5,14 @@ require 'sinatra/base'
 
 module Sinatra
   module RDiscount
-
+    
     def rdiscount(template, options={}, locals={})
       render :rdiscount, template, options, locals
     end
     
   private
     
-    def render_rdiscount(data, options, locals, &block)
+    def render_rdiscount(template, data, options, locals, &block)    
       if block_given?
         # render layout
         instance = ::Erubis::Eruby.new(data)
