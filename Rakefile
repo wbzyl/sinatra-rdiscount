@@ -12,7 +12,7 @@ begin
     gem.description = gem.summary
     gem.authors = ["Wlodek Bzyl"]
     
-    gem.add_runtime_dependency 'sinatra', '>=1.0.0'
+    gem.add_runtime_dependency 'sinatra'
     gem.add_runtime_dependency 'erubis', '>=2.6.5'
     gem.add_runtime_dependency 'rdiscount', '>=1.5.8'      
     
