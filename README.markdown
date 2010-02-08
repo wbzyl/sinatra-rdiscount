@@ -1,11 +1,11 @@
-# Sinatra RDiscount Extension
+# Sinatra RDiscount Extension for Sinatra v0.10.1
 
 The *sinatra-rdiscount* extension provides `rdiscount` helper method
 for rendering RDiscount templates.
 
 To install it, run: 
 
-    sudo gem install sinatra-rdiscount -s http://gemcutter.com
+    sudo gem install sinatra-rdiscount -v0.10.1
 
 To test it, create a simple Sinatra application:
 
