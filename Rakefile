@@ -19,6 +19,7 @@ begin
     gem.add_development_dependency 'rack', '>=1.1.0'
     gem.add_development_dependency 'rack-test', '>=0.5.3'
   end
+ Jeweler::GemcutterTasks.new  
 rescue LoadError
   puts "Jeweler not available."
   puts "Install it with:"
