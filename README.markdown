@@ -1,4 +1,4 @@
-# Sinatra RDiscount Extension for Sinatra v1.0
+# Sinatra RDiscount Extension for Sinatra v1.0.0
 
 **Important:** work in progress.
 
@@ -7,7 +7,7 @@ for rendering RDiscount templates.
 
 To install it, run: 
 
-    sudo gem install wbzyl-sinatra-rdiscount -s http://gems.github.com
+    sudo gem install sinatra-rdiscount -v1.0.0.0
 
 To test it, create a simple Sinatra application:
 
@@ -15,7 +15,7 @@ To test it, create a simple Sinatra application:
     require 'rubygems'
     require 'sinatra'
       
-    gem 'wbzyl-sinatra-rdiscount', '>=0.1.4'
+    gem 'sinatra-rdiscount', '=1.0.0.0'
     require 'sinatra/rdiscount'
     
     get "/" do
