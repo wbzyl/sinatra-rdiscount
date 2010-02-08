@@ -1,4 +1,6 @@
-# Sinatra RDiscount Extension
+# Sinatra RDiscount Extension for Sinatra v1.0
+
+**Important:** work in progress.
 
 The *sinatra-rdiscount* extension provides `rdiscount` helper method
 for rendering RDiscount templates.

@@ -12,20 +12,17 @@ begin
     gem.description = gem.summary
     gem.authors = ["Wlodek Bzyl"]
     
-    gem.add_runtime_dependency 'sinatra', '>= 0.10.1'
-    gem.add_runtime_dependency 'erubis', '>=2.6.4'
-    gem.add_runtime_dependency 'rdiscount', '>=1.3.4'      
+    gem.add_runtime_dependency 'sinatra', '>=1.0.0'
+    gem.add_runtime_dependency 'erubis', '>=2.6.5'
+    gem.add_runtime_dependency 'rdiscount', '>=1.5.8'      
     
-    gem.add_development_dependency 'rack', '>=1.0.0'
-    gem.add_development_dependency 'rack-test', '>=0.3.0'
-    
-    # gem is a Gem::Specification
-    # refer to http://www.rubygems.org/read/chapter/20 for additional settings  
+    gem.add_development_dependency 'rack', '>=1.1.0'
+    gem.add_development_dependency 'rack-test', '>=0.5.3'
   end
 rescue LoadError
   puts "Jeweler not available."
   puts "Install it with:"
-  puts "  sudo gem install technicalpickles-jeweler -s http://gems.github.com"
+  puts "  sudo gem install jeweler"
 end
 
 Rake::TestTask.new(:test) do |t|
