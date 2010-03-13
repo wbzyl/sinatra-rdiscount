@@ -11,10 +11,10 @@ begin
     gem.homepage = "http://github.com/wbzyl/sinatra-rdiscount"
     gem.description = gem.summary
     gem.authors = ["Wlodek Bzyl"]
-    
+
     gem.add_runtime_dependency 'sinatra', '~>0.9'
     gem.add_runtime_dependency 'erubis', '>=2.6.5'
-    gem.add_runtime_dependency 'rdiscount', '>=1.5.8'      
+    gem.add_runtime_dependency 'rdiscount', '>=1.5.8'
     
     gem.add_development_dependency 'rack', '>=1.1.0'
     gem.add_development_dependency 'rack-test', '>=0.5.3'
