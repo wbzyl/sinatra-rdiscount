@@ -16,7 +16,7 @@ begin
     gem.add_runtime_dependency 'erubis', '>=2.6.5'
     gem.add_runtime_dependency 'rdiscount', '>=1.5.8'
     
-    gem.add_development_dependency 'rack', '>=1.1.0'
+    gem.add_development_dependency 'rack', '>=1.0.0'
     gem.add_development_dependency 'rack-test', '>=0.5.3'
   end
   Jeweler::GemcutterTasks.new  
